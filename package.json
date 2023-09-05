@@ -1,0 +1,13 @@
+{
+  "name": "v5_final_enhancements",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind": "npx tailwindcss -i ./static/styles.css -o ./static/main.css --watch "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

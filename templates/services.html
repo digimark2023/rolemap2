@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Services</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <link
+      href="{{ url_for('static', filename='styles.css') }}"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='navbar.css') }}"
+    />
+  </head>
+  <body class="container">
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="/"
+        ><img alt="Logo" src="/static/logo.png"
+      /></a>
+      <button
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        class="navbar-toggler"
+        data-target="#navbarNav"
+        data-toggle="collapse"
+        type="button"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contactus">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+      <h2 class="my-3" class="mb-4">Our Services</h2>
+
+      <!-- Technology Services -->
+      <div class="service-category">
+        <h3 class="my-3" class="category-title">Technology Services</h3>
+        <div class="row">
+          <div class="col-md-4 service-card">
+            <i class="service-icon fa fa-code"></i>
+            <h4>Service 1</h4>
+            <p>Description for Service 1.</p>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#service1Modal"
+            >
+              Learn More
+            </button>
+          </div>
+          <!-- Add more services as needed -->
+        </div>
+      </div>
+
+      <!-- Business Consultancy Services -->
+      <div class="service-category">
+        <h3 class="my-3" class="category-title">
+          Business Consultancy Services
+        </h3>
+        <div class="row">
+          <div class="col-md-4 service-card">
+            <i class="service-icon fa fa-briefcase"></i>
+            <h4>Service 2</h4>
+            <p>Description for Service 2.</p>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#service2Modal"
+            >
+              Learn More
+            </button>
+          </div>
+          <!-- Add more services as needed -->
+        </div>
+      </div>
+
+      <!-- Services for Startups & Individuals -->
+      <div class="service-category">
+        <h3 class="my-3" class="category-title">
+          Services for Startups & Individuals
+        </h3>
+        <div class="row">
+          <div class="col-md-4 service-card">
+            <i class="service-icon fa fa-users"></i>
+            <h4>Service 3</h4>
+            <p>Description for Service 3.</p>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#service3Modal"
+            >
+              Learn More
+            </button>
+          </div>
+          <!-- Add more services as needed -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Service 1 -->
+    <div
+      class="modal fade"
+      id="service1Modal"
+      tabindex="-1"
+      aria-labelledby="service1ModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="service1ModalLabel">
+              Technology Service 1
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Detailed content about Technology Service 1 goes here...
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Service 2 -->
+    <div
+      class="modal fade"
+      id="service2Modal"
+      tabindex="-1"
+      aria-labelledby="service2ModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="service2ModalLabel">
+              Business Consultancy Service 2
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Detailed content about Business Consultancy Service 2 goes here...
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Service 3 -->
+    <div
+      class="modal fade"
+      id="service3Modal"
+      tabindex="-1"
+      aria-labelledby="service3ModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="service3ModalLabel">
+              Services for Startups & Individuals 3
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Detailed content about Services for Startups & Individuals 3 goes
+            here...
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-5">© 2023 RoleMapper. All rights reserved.</footer>
+  </body>
+</html>
