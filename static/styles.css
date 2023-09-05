@@ -417,3 +417,9 @@ body {
   width: 68%;
   border-radius: 25px;
 }
+.col-md-4 {
+  max-width: 32%;
+}
+.modal-title {
+  color: white;
+}
